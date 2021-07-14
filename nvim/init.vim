@@ -8,8 +8,8 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'jiangmiao/auto-pairs'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'Valloric/YouCompleteMe'
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+"Plug 'Valloric/YouCompleteMe'
+"Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'Yggdroot/indentLine'
 Plug 'tpope/vim-fugitive' " git wrapper
 Plug 'luochen1990/rainbow' " Rainbow Parentheses Improved
@@ -53,7 +53,7 @@ nmap <Leader>Wq :wa<CR>:q<CR>
 " 不做任何保存，直接退出 vim
 nmap <Leader>Q :qa!<CR>
 " 依次遍历子窗口
-nnoremap nw <C-W><C-W>
+"nnoremap nw <C-W><C-W>
 " 跳转至右方的窗口
 nnoremap <Leader>lw <C-W>l
 " 跳转至左方的窗口
@@ -301,3 +301,5 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
+let g:go_version_warning = 0
