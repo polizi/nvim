@@ -1,0 +1,6 @@
+[submodule "nvim/bundle/taglist.vim"]
+	path = nvim/bundle/taglist.vim
+	url = https://github.com/vim-scripts/taglist.vim.git
+[submodule "nvim/bundle/vim-clang-format"]
+	path = nvim/bundle/vim-clang-format
+	url = https://github.com/rhysd/vim-clang-format.git
