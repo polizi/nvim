@@ -36,10 +36,11 @@ Plug 'fatih/vim-go'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 filetype plugin indent on " required
-let mapleader=","
+let mapleader=" "
 " 设置快捷键将选中文本块复制至系统剪贴板
 vnoremap <Leader>y "+y
 " 设置快捷键将系统剪贴板内容粘贴至 vim
@@ -396,3 +397,5 @@ let g:mkdp_page_title = '「${name}」'
 let g:mkdp_filetypes = ['markdown']
 
 nmap <C-d> :MarkdownPreview<CR>
+
+nmap <Leader>s :CocAction<CR>
