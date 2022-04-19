@@ -8,8 +8,8 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'jiangmiao/auto-pairs'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'Valloric/YouCompleteMe'
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+"Plug 'Valloric/YouCompleteMe'
+"Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'Yggdroot/indentLine'
 Plug 'tpope/vim-fugitive' " git wrapper
 Plug 'luochen1990/rainbow' " Rainbow Parentheses Improved
@@ -139,8 +139,8 @@ let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_warning_symbol = '!'
 let g:ycm_error_symbol = 'x'
 map<C-k> :pyf ~/.local/clang/share/clang/clang-format.py<CR>
-nnoremap <C-j> :YcmCompleter GoToDefinitionElseDeclaration<CR>
-nnoremap <C-x> :YcmCompleter FixIt<CR>
+"nnoremap <C-j> :YcmCompleter GoToDefinitionElseDeclaration<CR>
+"nnoremap <C-x> :YcmCompleter FixIt<CR>
 " 选中多行格式化
 map <C-k> :pyf ~/.config/nvim/prebuild/clang-format.py<CR> 
 let g:ycm_confirm_extra_conf=0
@@ -290,7 +290,7 @@ nmap <C-s> :%!jq '.'<CR>
 let g:vmt_auto_update_on_save = 0
 let g:rustfmt_autosave = 1
 let g:ycm_rust_src_path='~/code/rust/rust-lang/src/'
-nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+"nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 inoremap <leader>; <C-x><C-o>
 
 " vim autopep8
@@ -396,6 +396,14 @@ let g:mkdp_page_title = '「${name}」'
 " these filetypes will have MarkdownPreview... commands
 let g:mkdp_filetypes = ['markdown']
 
+" markdown
 nmap <C-d> :MarkdownPreview<CR>
 
+" spell check
 nmap <Leader>s :CocAction<CR>
+
+"  ccls 
+nmap <C-j> <Plug>(coc-definition)
+nmap gd <Plug>(coc-type-definition)
+nmap gi <Plug>(coc-implementation)
+nmap gr <Plug>(coc-references)
