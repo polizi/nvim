@@ -1,6 +1,5 @@
 {
   "cSpell.userWords": [
-    "ccls",
     "kuaishou",
     "kwai",
     "quic"
@@ -11,19 +10,6 @@
       "rootPatterns": ["go.mod"],
       "trace.server": "verbose",
       "filetypes": ["go"]
-   },
-    "ccls": {
-      "command": "ccls",
-      "filetypes": ["c", "cc", "cpp", "cuda", "objc", "objcpp"],
-      "rootPatterns": [".ccls-root", "compile_commands.json"],
-      "initializationOptions": {
-        "cache": {
-          "directory": ".ccls-cache"
-        },
-        "client": {
-          "snippetSupport": true
-        }
-      }
-    }
+   }
   }
 }
