@@ -32,9 +32,8 @@ Plug 'chiphogg/vim-prototxt'
 Plug 'tell-k/vim-autopep8'
 Plug 'fatih/vim-go'
 "Plug 'ludovicchabant/vim-gutentags'
-"Plug 'junegunn/fzf', { 'dir' : '~/.fzf', 'do' : './install --all' }
-Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
